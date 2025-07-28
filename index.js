@@ -145,7 +145,7 @@ const processMessages = async () => {
 
         // Add a 5-second delay between messages to avoid rate limiting
         console.log("Waiting 5 seconds before sending next message...");
-        await new Promise((resolve) => setTimeout(resolve, 5000));
+        await new Promise((resolve) => setTimeout(resolve, 1000));
       } catch (messageError) {
         console.error(
           `❌ Error sending message ${message.university} #${message.messageIndex}:`,
